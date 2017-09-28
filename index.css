@@ -1,19 +1,53 @@
 body {
-
+    position: relative;
     font-family: 'Roboto', sans-serif;
 
-    margin-top: 50px;
 }
+.head{
+    width: 100%;
+    display: inline-block;
+}
+.menu {
+    margin-left: -15px;
+}
+.navbar-default{
+    margin: 0;
+    border: 0;
+}
+.navbar-header {
+    margin: 0;
+}
+.navbar-collapse {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navbar-nav {
+    text-align: center;
+}
+.affix {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+.affix-top {
+    position: relative;
+}
+
 
 h1 {
     letter-spacing: 2px;
     margin-top: 5%;
     margin-bottom: 5%;
+    text-shadow: 2px 2px 5px black;
 }
 
 h3 {
     font-size: 30px;
-    padding-top: 250px;
+    padding-top: 220px;
 
 }
 
@@ -39,11 +73,10 @@ p {
     padding-left: 5%;
     padding-right: 5%;
     font-size: 20px;
-
 }
 
-header {
-    text-align: center;
+.logo {
+    height: 10%;
 }
 
 .logo h1 {
@@ -61,7 +94,42 @@ button {
     padding: 5px 10px;
     font-size: 20px;
     margin-bottom: 2%;
+}
 
+.collapse{
+  margin-left: 0;
+    background: linear-gradient( #834242, gray, #834242);
+}
+.container-fluid{
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute;
+    width: 100%;
+}
+.content {
+    margin-top:263px;
+    z-index: -1;
+}
+
+.navbar-default .navbar-nav>li>a {
+     color: white;
+    font-size: 15px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    background-color: #834242;
+   transform: scale(1.1);
+
+}
+
+.mail{
+    color: #333333;
+}
+.mail:visited{
+    text-decoration: none;
+}
+.main:hover{
+    text-decoration: none;
 }
 
 a {
@@ -78,31 +146,25 @@ a:hover {
 }
 
 .bg {
-    margin-top: 5%;
     height: 450px;
     text-align: center;
     background: url("images/dwor.jpg") no-repeat fixed center;
     background-size: cover;
     box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.4);
     color: white;
-
 }
 
 .bg p {
-
     font-size: 20px;
     letter-spacing: 1px;
     font-weight: 100;
-
+    text-shadow: 2px 2px 5px black;
 }
 
+
 .location {
-    background: radial-gradient(darkgray 5%, transparent 16%) 0 0, radial-gradient(lightgray 5%, transparent 16%) 8px 8px;
-    background-color: white;
-    background-size: 7px 7px;
     min-height: 250px;
     text-align: center;
-
 }
 
 .galery {
@@ -112,32 +174,47 @@ a:hover {
     background: url("images/dworek.jpg") no-repeat fixed center;
     background-size: cover;
     box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.4);
-
 }
 
 .history {
-
-    background: radial-gradient(darkgray 5%, transparent 16%) 0 0, radial-gradient(lightgray 5%, transparent 16%) 8px 8px;
-    background-color: white;
-    background-size: 7px 7px;
+    text-align: justify;
+}
+.history h1{
     text-align: center;
+}
+.history h5{
+    text-align: center;
+}
+.history h6{
+    text-align: center;
+}
+.column{
+    column-count: 3;
+    padding: 5%;
 
 }
-
-.revitalization {
-    /*height: 450px;*/
+.title{
     color: white;
-    text-align: center;
     background: url("images/dwor.jpg") no-repeat fixed center;
     background-size: cover;
     box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 5px black;
+
+}
+.description{
+
+ padding-top: 3%;
+    background: linear-gradient(white,white, #6d7e74)
 
 }
 
+
+.revitalization {
+    text-align: center;
+}
+
 .cooperation {
-    background: radial-gradient(darkgray 5%, transparent 16%) 0 0, radial-gradient(lightgray 5%, transparent 16%) 8px 8px;
-    background-color: white;
-    background-size: 7px 7px;
+
     height: auto;
     text-align: center;
 }
@@ -146,10 +223,75 @@ a:hover {
     background-color: #834242;
     color: white;
     text-align: center;
-    /*height: 600px;*/
 }
 
 p:last-child {
     padding-bottom: 5%;
 }
+@media only screen and (max-width: 900px) {
+ .column{
+     column-count: 1;
+ }
+    button{
+        margin: 0.2%;
+    }
+    .logo{
+        text-align: center;
 
+    }
+    main{
+margin-top: 90px;
+        position: relative;
+    }
+    .history{
+        text-align: justify;
+    }
+    .history h1{
+        text-align: center;
+    }
+    .history h5{
+        text-align: center;
+    }
+    .history h6{
+        text-align: center;
+    }
+    .collapse{
+        background-color: #834242;
+        margin-left: 0;
+    }
+    /*.affix ~ .container-fluid {*/
+        /*position: relative;*/
+        /*top: 50px;*/
+        /*right: 0;*/
+    /*}*/
+    .navbar-default .navbar-nav>li>a {
+        color: white;
+        font-size: 15px;
+    }
+
+
+}
+@media only screen and (max-width: 767px) {
+    .menu {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .navbar-header{
+        background: linear-gradient( #834242, gray, #834242);
+    }
+    .affix>.menu>nav>.navbar-header {
+        padding-right: 15px;
+    }
+
+.navbar-toggle{
+    color: white;
+}
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #834242;
+    }
+}
+
+
+article > .row > div{
+    margin-top: 50px;
+}

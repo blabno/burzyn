@@ -3,34 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-
     <title>Dwór Burzyn</title>
 </head>
-<body>
+<body data-spy="scroll" data-target=".head">
+<div class="container-fluid">
+    <div class=" col-sm-12 col-md-12 logo text-center">
+        <h1>DWÓR BURZYN</h1>
+    </div>
+    <div class="head" data-spy="affix" data-offset-top="220">
+        <div class="menu">
+            <nav class="navbar navbar-default">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                            aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--<a class="navbar-brand" href="#">Brand</a>-->
+                </div>
 
-<div class="conteiner-fluid">
-    <header>
-        <div class="row">
-            <div class="col-md-12 logo">
-                <h1 id="back">DWÓR BURZYN</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 menu">
-                <button><a href="/Dworek/index.html#location">LOKALIZACJA</a></button>
-                <button><a href="/Dworek/index.html#galery">GALERIA</a></button>
-                <button><a href="/Dworek/index.html#history">HISTORIA</a></button>
-                <button><a href="/Dworek/index.html#revitalization">REWITALIZACJA</a></button>
-                <button><a href="/Dworek/index.html#cooperation">WSPÓŁPRACA</a></button>
-                <button><a href="/Dworek/index.html#contact">KONTAKT</a></button>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#location">Lokaliacja</a></li>
+                        <li><a href="#galery">Galeria</a></li>
+                        <li><a href="#history">Historia</a></li>
+                        <li><a href="#revitalization">Rewitalizacja</a></li>
+                        <li><a href="#cooperation">Współpraca</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
 
-            </div>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
         </div>
+    </div>
+</div>
+<div class="container-fluid content">
+    <article class="welcome" id="welcome">
         <div class="row">
             <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 bg">
                 <h1>Dwór z XIX wieku Burzyn</h1>
@@ -38,53 +57,48 @@
                 <p>Serdecznie witamy! Znajdziesz tu informacje na temat Dworu Burzyn - jego lokalizacji, historii, rewitalizacji
                     oraz informacje dla specjalistów różnych branż zaineresowanych współpracą.</p>
             </div>
-
         </div>
+    </article>
 
-
-    </header>
-    <main>
-
-        <article class="location" id="location">
-            <div class="row">
+    <article class="location" id="location">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 ">
                 <h1>LOKALIZACJA</h1>
 
                 <p>Dwór znajduje się we wsi Burzyn położonej w województwie małopolskim, w powiecie tarnowskim,
                     w gminie Tuchów (około 3 km na południowy wschód od Tuchowa),
                     na prawym brzegu rzeki Biała, na wysokości 273 m n. p. m.</p>
             </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-12 ">
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 ">
 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10861.196148205241!2d21.062617341102282!3d49.87380524933922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473d9703fbccf4ed%3A0x29326419f8a890cc!2s33-170+Burzyn!5e1!3m2!1spl!2spl!4v1506324859681"
-                            width="90%" height="600" frameborder="0" style="border:0;padding-bottom: 5%" allowfullscreen></iframe>
-                </div>
 
-                <br/>
-                <br/>
-                <button><a href="/Dworek/index.html#back">WRÓĆ DO MENU</a></button>
-
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2571.2309986341115!2d21.06346331565065!3d49.87568843649225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473d9704ac8b267f%3A0x4a67ec64e1171e77!2sBurzyn+1A%2C+33-170+Burzyn!5e0!3m2!1spl!2spl!4v1506422870275"
+                        width="90%" height="600" frameborder="0" style="border:0 padding-bottom: 5%;margin-bottom: 5%;" allowfullscreen></iframe>
             </div>
 
-
-        </article>
-        <article class="galery" id="galery">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="align-bottom">Dwór drewniany rok budowy ok. 1852</h3>
-                </div>
+        </div>
+    </article>
+    <article class="galery" id="galery">
+        <div class="row">
+            <div class=" col-sm-12 col-md-12">
+                <h3>Dwór drewniany rok budowy ok. 1852</h3>
             </div>
+        </div>
 
-        </article>
-        <article class="history" id="history">
-            <div class="row">
+    </article>
+    <article class="history" id="history">
+        <div class="row column">
+            <div class=" col-sm-12 col-md-12">
                 <h1>HISTORIA</h1>
 
                 <p>Pochodzenie nazwy wsi nie jest jednoznacznie wyjaśnione.
                     Prawdopodobnie nazwa powstała od nazwiska pierwszego właściciela wsi - Mikołaja Burzy.</p>
 
                 <p>Nazwa miejscowości ulegała w ciągu wieków pewnym zmianom i przekształceniom, co wiązało się z rozwojem języka ojczystego,
-                    częstokroć stymulowanym napływem obcojęzycznego słownictwa do rdzennej polszczyzny. W dokumentach odnajdujemy m.in. następujące nazwy wsi:
+                    częstokroć stymulowanym napływem obcojęzycznego słownictwa do rdzennej polszczyzny. W dokumentach odnajdujemy m.in. następujące nazwy
+                    wsi:
                     Burzin, Burzino (1340-41),
                     Burzini (1376), Burzyn (1381), Burzinow, Burzyna, Burzym, Brzim, Burzyny, Buczin, Bvryn, Buszyn. </p>
 
@@ -96,32 +110,42 @@
                     Dąbrówce i Buchcicach aż 44 stanowiska, noszące ślady dawnego osadnictwa. Dzięki nim, możemy przyjąć za pewnik,
                     że początki osady Tuchów i okolicy, w tym Burzyna, sięgają okresu przedpiastowskiego. </p>
 
-                <p>Teren dzisiaj należący do Burzyna porastały wówczas lasy i osadników zapewne było niewielu. Zatrzymywali się w dolinach polując na zwierzynę
-                    leśną, która dostarczała im mięsa na pokarm a skór na okrycie i posłanie. W lasach zbierano grzyby i jagody leśne, z barci wybierano miód.
-                    Przepływająca nieopodal rzeka Biała stanowiła dogodny szlak komunikacyjny, a także dostarczała pierwotnemu człowiekowi koniecznej do życia
+                <p>Teren dzisiaj należący do Burzyna porastały wówczas lasy i osadników zapewne było niewielu. Zatrzymywali się w dolinach polując na
+                    zwierzynę
+                    leśną, która dostarczała im mięsa na pokarm a skór na okrycie i posłanie. W lasach zbierano grzyby i jagody leśne, z barci wybierano
+                    miód.
+                    Przepływająca nieopodal rzeka Biała stanowiła dogodny szlak komunikacyjny, a także dostarczała pierwotnemu człowiekowi koniecznej do
+                    życia
                     wody i ryb na pokarm. W późniejszym czasie życia osiadłego lasy przez karczunek przemieniano w pola uprawne,
                     a wycięte drzewa dawały budulec w postaci bali i bierwion do budowy chat.</p>
                 <h5>XIII-XV w.</h5>
 
                 <p>Pierwsza wzmianka o Burzynie zapisana w dokumencie Leszka Czarnego pochodzi z 1288 r. Na jego podstawie można wnioskować,
-                    że wieś pierwotnie założona była na prawie polskim, ponieważ wspomniany dokument zawiera zezwolenie udzielone opatowi tynieckiemu, dotyczące
+                    że wieś pierwotnie założona była na prawie polskim, ponieważ wspomniany dokument zawiera zezwolenie udzielone opatowi tynieckiemu,
+                    dotyczące
                     przeniesienia kilku wsi, w tym Burzyna, na prawo magdeburskie. W tym czasie Burzyn jest osadą leśną. Początkowo osada jest własnością
                     książęcą, później przechodzi w ręce prywatne. Staje się to ok. 1300 r. Wtedy to Władysław Łokietek, książę kujawski i sandomierski, a
                     później król Polski miał ustanowić właścicielami Burzyna i Ryglic po wieczne czasy dwóch szlachciców herbu Pobóg - Mikołaja Burzę i
-                    Wawrzyńca Kielanowskiego, którzy następnie stają się założycielami parafii i fundatorami kościoła w Ryglicach. Wizytacja parafii i kościoła
-                    z 1748 roku informuje, że na menzie kamiennej ołtarza wielkiego jest wykuty następujący napis: "Vladislaus princeps Poloniae sub anno Domini
+                    Wawrzyńca Kielanowskiego, którzy następnie stają się założycielami parafii i fundatorami kościoła w Ryglicach. Wizytacja parafii i
+                    kościoła
+                    z 1748 roku informuje, że na menzie kamiennej ołtarza wielkiego jest wykuty następujący napis: "Vladislaus princeps Poloniae sub anno
+                    Domini
                     1301 wieś Burzyn i Rygielskie Porzecze nadał wiecznemi czasy szlachetnym dwiema osobom: Panu Mikołajowi Burzy i Panu Wawrzyńcowi
-                    Kielanowskiemu, którzy Kościół Rygielski ufundowali, do którego pierwszego plebana introdukowali ks. Stanisława Pierzchałę". Zapewne rycerze
+                    Kielanowskiemu, którzy Kościół Rygielski ufundowali, do którego pierwszego plebana introdukowali ks. Stanisława Pierzchałę". Zapewne
+                    rycerze
                     ci dostali te wsie w zamian za wierną służbę na rzecz Władysława Łokietka, który akurat w tym czasie przeżywał ciężkie chwile walcząc z
                     królem czeskim Wacławem II.
                     Oczywiście Łokietkowi chodziło o pozyskanie sobie jak największej liczby wiernych zwolenników w walce o zjednoczenie kraju.</p>
 
-                <p>Kolejna wzmianka o Burzynie pojawia się w 1341 roku w dokumencie Opata Tynieckiego Bogusława, który zakładając na prawie magdeburskim wieś
+                <p>Kolejna wzmianka o Burzynie pojawia się w 1341 roku w dokumencie Opata Tynieckiego Bogusława, który zakładając na prawie magdeburskim
+                    wieś
                     Siedliska określił jej granice,
                     które dochodziły również do Burzyna.</p>
 
-                <p>Burzyńscy h. Pobóg - pierwsi właściciele Burzyna, byli też właścicielami Kielanowic (w 1493 r. Jan Burzyński, ówczesny właściciel Kielanowic,
-                    s. Mikołaja Burzyńskiego z Burzyna, zaczął pisać się "Kielanowski". Po zarejestrowaniu nazwiska zapoczątkował on nowy ród Kielanowskich h.
+                <p>Burzyńscy h. Pobóg - pierwsi właściciele Burzyna, byli też właścicielami Kielanowic (w 1493 r. Jan Burzyński, ówczesny właściciel
+                    Kielanowic,
+                    s. Mikołaja Burzyńskiego z Burzyna, zaczął pisać się "Kielanowski". Po zarejestrowaniu nazwiska zapoczątkował on nowy ród Kielanowskich
+                    h.
                     Pobóg),
                     Bistuszowej, Uniszowej, Ryglic, Jonin i Liciąży k. Jonin.</p>
 
@@ -134,8 +158,10 @@
 
                 <p>- część Uniszowej, którą kupił za 500 grzywien.</p>
 
-                <p>- Kielanowice nabyte w 1430 r, za 500 grzywien od ówczesnego właściciela tej wsi, niejakiego Paszki. Właścicielami Kielanowic Burzyńscy byli
-                    przez przeszło 200 lat, do XVII wieku. Dali oni początek nowego rodu Kielanowskich herbu Pobóg, gdyż wnuk Mikołaja, Jakub zarejestrował to
+                <p>- Kielanowice nabyte w 1430 r, za 500 grzywien od ówczesnego właściciela tej wsi, niejakiego Paszki. Właścicielami Kielanowic Burzyńscy
+                    byli
+                    przez przeszło 200 lat, do XVII wieku. Dali oni początek nowego rodu Kielanowskich herbu Pobóg, gdyż wnuk Mikołaja, Jakub zarejestrował
+                    to
                     nazwisko rodowe już w roku 1493. W 1486 r.
                     Jakub kupił od Mikołaja Łyczko z Ryglic 7 łanów w Ryglicach Górnych i Dolnych.</p>
 
@@ -155,12 +181,15 @@
                     Burzyńscy będą wchodzić w koligacje rodzinne drogą małżeństw i z którymi będą właścicielami Ryglic przez wiele następnych lat.</p>
 
                 <p>* W 1422 r. Mikołaj Burzyński z Burzyna oskarżył Piotra Łyczko z Ryglic o nieszlachectwo. Nie znamy pewnego powodu, dlaczego zastosował
-                    Piotrowi Łyczko naganę szlachectwa. Tym bardziej, że oskarżenie okazało się niesłuszne i za przegraną sprawę Burzyński musiał zapłacić karę
+                    Piotrowi Łyczko naganę szlachectwa. Tym bardziej, że oskarżenie okazało się niesłuszne i za przegraną sprawę Burzyński musiał zapłacić
+                    karę
                     pieniężną sądowi i Łyczce wezwanemu do dowiedzenia szlachectwa.
                     Być może chodziło o konflikty sąsiedzkie i majątkowe.</p>
 
-                <p>* 18 stycznia 1423 r. na zamku w Bieczu Mikołaj z Burzyna wniósł pozew przeciw Piotrowi z Ryglic oskarżając go o rabunek mąki ze spichlerza
-                    ich wspólnego młyna w Ryglicach, którego to Łyczko miał dokonać zjawiając się w młynie nocą, oraz o kradzież 10 marek i wypuszczenie ryb ze
+                <p>* 18 stycznia 1423 r. na zamku w Bieczu Mikołaj z Burzyna wniósł pozew przeciw Piotrowi z Ryglic oskarżając go o rabunek mąki ze
+                    spichlerza
+                    ich wspólnego młyna w Ryglicach, którego to Łyczko miał dokonać zjawiając się w młynie nocą, oraz o kradzież 10 marek i wypuszczenie ryb
+                    ze
                     stawu.
                     Być może był to powód do odegrania się Łyczki na Burzyńskim za naganę szlachectwa.</p>
 
@@ -170,14 +199,16 @@
                     Paweł pełnił urząd sołtysa w Kołaczycach i ławnika Sądu Wyższego Prawa Niemieckiego na zamku Golesz,
                     gdzie przebywał w latach 1442 - 1472. Jan był studentem Akademii Krakowskiej w 1413 r.,
                     a Michał studiował w tejże uczelni w 1433 r., później został plebanem w Ryglicach. Barbara wstąpiła do klarysek w Starym Sączu
-                    (1446 r.). W 1449 r. Piotr będący od 1407 r. właścicielem Jonin, podważył szlachectwo Piotra z Kowalowej, nazywając go "chłopem", a w rok
+                    (1446 r.). W 1449 r. Piotr będący od 1407 r. właścicielem Jonin, podważył szlachectwo Piotra z Kowalowej, nazywając go "chłopem", a w
+                    rok
                     później zginął w niewyjaśnionych okolicznościach - być może padł ofiarą zemsty za tę zniewagę, co sugerować może fakt,
                     iż po jego śmierci bracia otrzymali nie wiadomo skąd 40 grzywien za głowę zabitego. Piotr miał żonę Barbarę.</p>
 
                 <p>* W tym samym okresie w Burzynie żył Piotr Burzyński - prawdopodobnie brat wyżej wspomnianego Mikołaja. Sołtys w Dąbrówce,
                     dzierżawca Ciborowic, ławnik sądu wyższego na zamku w Goleszu. Piotr poślubił Zofię, córkę Mikołaja Łyczki z Ryglic. W 1480 r.
                     mąż zapisał jej 120 grzywien posagu i wiana na połowie dóbr dziedzicznych w Burzynie i Ryglicach oraz na całym dworze w Burzynie i
-                    Ryglicach. W 1501 r. Piotr, dziedzic części Ryglic, sprzedał całą swoją część, którą miał w Ryglicach, za 50 grzywien Mikołajowi Łyczko. Ten
+                    Ryglicach. W 1501 r. Piotr, dziedzic części Ryglic, sprzedał całą swoją część, którą miał w Ryglicach, za 50 grzywien Mikołajowi Łyczko.
+                    Ten
                     z kolei, w 1504 r., ustąpił Stanisławowi Burzyńskiemu 50 grzywien na całej części dziedzictwa w Dolnych Ryglicach, które kupił od Piotra
                     Burzyńskiego. Natomiast Stanisław, ustąpione mienie w Dolnych Ryglicach, tj. pięciu osiadłych kmieci: Stanisława Padek, Kuna, Piekarz,
                     Dribala, Tataruch oraz dwie opustoszałe role Angelowskiego
@@ -192,11 +223,13 @@
                 <p>* W 1487 r. Jan Burzyński z Jonin, sprzedał Stanisławowi z Wróblowic rolę, na której siedział Paweł. W 1488 r.
                     Stanisław z Wróblowic sprzedał rolę Pawła z Ryglic Górnych Jakubowi z Kielanowic za 30 grzywien.</p>
 
-                <p>* W 1502 r. Jan Kwiatkowski, dziedzic Ryglic Środkowych, zamienił się na kmieci wraz z ich ziemią ze Stanisławem Burzyńskim, mężem Elżbiety,
+                <p>* W 1502 r. Jan Kwiatkowski, dziedzic Ryglic Środkowych, zamienił się na kmieci wraz z ich ziemią ze Stanisławem Burzyńskim, mężem
+                    Elżbiety,
                     dziedzicem Ryglic Wyższych. W tym samym roku
                     Stanisław Burzyński zapisał żonie Elżbiecie na połowie dóbr swoich w Ryglicach 150 grzywien posagu i 150 grzywien wiana.</p>
 
-                <p>* W 1502 r. bracia Jakub i Stanisław Kielanowscy, dziedzice Ryglic podzielili się dobrami. Jakubowi przypadły wsie i części wsi Kielanowice,
+                <p>* W 1502 r. bracia Jakub i Stanisław Kielanowscy, dziedzice Ryglic podzielili się dobrami. Jakubowi przypadły wsie i części wsi
+                    Kielanowice,
                     Bistuszowa i Uniszowa, a Stanisławowi,
                     młodszemu bratu, części dziedziczne w obu Ryglicach wraz z tamtejszym sołectwem oraz 150 grzywien.</p>
 
@@ -211,15 +244,20 @@
                 <p>Burzyńscy będąc właścicielami Burzyna, Bistuszowej i Kielanowic, zmieniali granice tych wsi
                     (być może drogą podziału dóbr majątkowych pomiędzy dzieci). Wiadomym jest, że jeszcze w XV wieku Kielanowice zajmowały obszar o wiele
                     większy, niż ten, który dziś za przynależny do tej wsi się uważa. Wieś składała się z dwóch części: Kielanowic Dolnych (dzisiejsze
-                    Kielanowice) i Kielanowic Górnych. Te ostatnie zostały podzielone i ich południowo - wschodnią część przyłączono do Bistuszowej (dzisiejsze
-                    Bistuszowskie Podlesie), a część południowo - zachodnią do Burzyna (dziś jest to obszar poczynając od końca ulicy Owocowej w Kielanowicach,
+                    Kielanowice) i Kielanowic Górnych. Te ostatnie zostały podzielone i ich południowo - wschodnią część przyłączono do Bistuszowej
+                    (dzisiejsze
+                    Bistuszowskie Podlesie), a część południowo - zachodnią do Burzyna (dziś jest to obszar poczynając od końca ulicy Owocowej w
+                    Kielanowicach,
                     aż po lasy - granica z Jodłówką Tuchowską w okolicach Brzanki).</p>
 
-                <p>W 1254 r. całą Polskę, w tym m.in. Tuchów i Burzyn nawiedziła klęska żywiołowa. Oto jak opisuje Długosz to zdarzenie: "Od świąt Wielkiejnocy
+                <p>W 1254 r. całą Polskę, w tym m.in. Tuchów i Burzyn nawiedziła klęska żywiołowa. Oto jak opisuje Długosz to zdarzenie: "Od świąt
+                    Wielkiejnocy
                     aż do 25 lipca we wszystkich krajach Polski dniem i nocą padał deszcz. Z tej więc ustawicznej słoty takie powstały wód wylewy, że powódź
                     poznosiła zboża, a po polach i niwach można było pływać statkami jakby po rzekach". Kolejna wielka powódź nastąpiła 27 lipca 1270 r.
-                    Padający przez 2 tygodnie deszcz spowodował wylanie wszystkich rzek, tych na południu kraju też. Woda zmyła wiele domostw, zasiewów i łąk,
-                    wielu ludzi potonęło. Nietrudno wyobrazić sobie, że podobny los spotkał osadników nad Białą. Z problemem powodzi na skutek wylewającej rzeki
+                    Padający przez 2 tygodnie deszcz spowodował wylanie wszystkich rzek, tych na południu kraju też. Woda zmyła wiele domostw, zasiewów i
+                    łąk,
+                    wielu ludzi potonęło. Nietrudno wyobrazić sobie, że podobny los spotkał osadników nad Białą. Z problemem powodzi na skutek wylewającej
+                    rzeki
                     Białej mieszkańcy wsi i miast leżących wzdłuż rzeki borykają się niezmiennie po nasze czasy.</p>
 
                 <p>W styczniu 1474 r. Tuchów i okoliczne wsie (bardzo prawdopodobne, że także Burzyn) zostały nawiedzone najazdem Węgrów. Miasto zostało
@@ -293,96 +331,131 @@
                 <p>W końcu XVIII wieku majątek ziemski w Burzynie należał do Andrzeja Chrząstowskiego i Zofii z Zielińskich Chrząstowskiej, a następnie ich
                     syna, Aleksandra.
                     Po pierwszym rozbiorze, początek panowania austriackiego był dla regionu bardzo zły. Wojsko zbierało kontrybucję, ściągało żywność,
-                    dopuszczało się gwałtów, siłą wcielano chłopów do wojska. Co prawda Austriackie ustawodawstwo agrarne starało się ulżyć nieco doli chłopa,
+                    dopuszczało się gwałtów, siłą wcielano chłopów do wojska. Co prawda Austriackie ustawodawstwo agrarne starało się ulżyć nieco doli
+                    chłopa,
                     m.in. przez zniesienie jego niewoli osobistej oraz przez wydanie w roku 1781 patentu o zmniejszeniu pańszczyzny do dwóch dni tygodniowo.
                     Niemniej jednak Galicja aż do 1848 roku żyła ciągle w anachronicznym ustroju feudalnym, zaś chłopom doszła jeszcze długoletnia służba
                     wojskowa. Chłop był jak dawniej przypisany do ziemi, która nie była jego własnością. Należała bowiem do pana, a za jej użytkowanie chłop
                     uiszczał rentę odrobkową zwaną pańszczyzną, która od XV wieku stale rosła osiągając w XVIII wieku 4-5 dni w tygodniu. Pełnorolni chłopi
                     odrabiali pańszczyznę własnym zaprzęgiem, wołami lub końmi, małorolni komornicy - pieszo, ręcznie. Życie chłopskie od czasów
                     przedrozbiorowych nie uległo praktycznie żadnej istotnej poprawie. W dodatku ich poziom oświaty był opłakany, panował powszechny
-                    analfabetyzm. W tym okresie istniała co prawda w Tuchowie szkoła parafialna, a później wiejska trzyklasówka, tzw. "trywialna", ale chłopi
-                    rzadko posyłali dzieci do szkoły, bo potrzebowali ich do pracy i pomocy w gospodarstwie, skoro sami musieli odrabiać pańszczyznę. Stąd brak
-                    im było uświadomienia narodowego. Chłopu było wszystko jedno, czy krajem rządzi król polski, czy cesarz austriacki. On dalej borykał się na
-                    co dzień ze swoją ciężką dolą, a bezpośrednich jej sprawców widział nie tyle we właścicielu folwarku, ile w rządcach i ekonomach, którzy go
+                    analfabetyzm. W tym okresie istniała co prawda w Tuchowie szkoła parafialna, a później wiejska trzyklasówka, tzw. "trywialna", ale
+                    chłopi
+                    rzadko posyłali dzieci do szkoły, bo potrzebowali ich do pracy i pomocy w gospodarstwie, skoro sami musieli odrabiać pańszczyznę. Stąd
+                    brak
+                    im było uświadomienia narodowego. Chłopu było wszystko jedno, czy krajem rządzi król polski, czy cesarz austriacki. On dalej borykał się
+                    na
+                    co dzień ze swoją ciężką dolą, a bezpośrednich jej sprawców widział nie tyle we właścicielu folwarku, ile w rządcach i ekonomach, którzy
+                    go
                     do pracy na pańskim polu pędzili.
-                    Tuchów zniszczony rekwizycjami wojsk rosyjskich popadł w 1772 r. w skrajną nędzę. W mieście i okolicy wybuchł głodowy tyfus plamisty, który
+                    Tuchów zniszczony rekwizycjami wojsk rosyjskich popadł w 1772 r. w skrajną nędzę. W mieście i okolicy wybuchł głodowy tyfus plamisty,
+                    który
                     dziesiątkował ludność, a zwłaszcza dzieci.</p>
                 <h5>I połowa XIX wieku </h5>
 
                 <p>W 1807 roku nastąpiło rozdzielenie dóbr Burzyn i Kielanowice pomiędzy Aleksandrem Chrząstowskim a Salomeą Szczepanowską. W 1811 majątek w
-                    Burzynie wraz z połową Szczepanowic objął syn Aleksandra, Ludwik, a po jego śmierci w 1829 roku przeszedł on na dzieci Ludwika. W 1833 roku
+                    Burzynie wraz z połową Szczepanowic objął syn Aleksandra, Ludwik, a po jego śmierci w 1829 roku przeszedł on na dzieci Ludwika. W 1833
+                    roku
                     Burzyn wraz z dworem (oraz Szczepanowice) zakupił od Chrząstowskich Aleksander Różycki.</p>
 
                 <p>Okres ten to czas walk narodowowyzwoleńczych. Poddany obcej zwierzchności naród, chcąc się wyzwolić spod zaborczego jarzma, raz po raz
-                    inicjował zbrojne zrywy. Pierwszym było powstanie listopadowe (1830-31). Patriotycznie nastawiona młodzież Małopolski przekradała się przez
+                    inicjował zbrojne zrywy. Pierwszym było powstanie listopadowe (1830-31). Patriotycznie nastawiona młodzież Małopolski przekradała się
+                    przez
                     kordon graniczny, chcąc wziąć w nim dział.</p>
 
-                <p>Tak postąpił ówczesny właściciel Burzyna Aleksander Różycki. Za męstwo na polu walki otrzymał stopień majora i Krzyż Virtutti Militari.</p>
+                <p>Tak postąpił ówczesny właściciel Burzyna Aleksander Różycki. Za męstwo na polu walki otrzymał stopień majora i Krzyż Virtutti
+                    Militari.</p>
 
                 <p>Rzeź galicyjska, która zapisała się krwawymi zgłoskami także w Burzynie</p>
 
                 <p>Pod koniec 1845 r. w Galicji pojawili się emisariusze. Byli to agitatorzy Towarzystwa Demokratycznego Polskiego z Paryża. Chodzili oni po
-                    wsiach i miastach wzywając do powstania przeciwko zaborcom, do zniesienia pańszczyzny i uwłaszczenia chłopów bez odszkodowania. Na terenie
-                    Tarnowa i okolicy rewolucyjno - społeczną działalność prowadzili m.in. Julian Goslar i Edward Dembowski. Nie znając miejscowych warunków,
+                    wsiach i miastach wzywając do powstania przeciwko zaborcom, do zniesienia pańszczyzny i uwłaszczenia chłopów bez odszkodowania. Na
+                    terenie
+                    Tarnowa i okolicy rewolucyjno - społeczną działalność prowadzili m.in. Julian Goslar i Edward Dembowski. Nie znając miejscowych
+                    warunków,
                     emisariusze ci byli przekonani, że skoro ogłoszą chłopom zniesienie pańszczyzny i przyznanie ziemi na własność, chłopi chwycą za broń i
                     pójdą wraz ze szlachtą przeciwko zaborcy austriackiemu. Oderwani od realiów miejscowych, w swoich przewidywaniach popełnili błąd.</p>
 
-                <p>W Tuchowie i okolicy powstały ośrodki konspiracyjne, do których jednak należała głównie szlachta, młodzież gimnazjalna i seminaryjna, czasem
-                    rzemieślnicy i drobni urzędnicy. W Burzynie do konspiracji należeli: Aleksander Różycki, który w powstaniu listopadowym za męstwo i odwagę
-                    uzyskał rangę majora i Krzyż Virtuti Militari, jego syn Roman, Włodzimierz Rozen, nauczyciel Strzałkowski, Somorski oraz służba dworska, w
-                    tym Józef Gągola, Tomasz Iwaniec, Antoni Wantuch. W lutym wrzenie rewolucyjne ogarnęło nie tylko okolice Tuchowa, ale cały region Tarnowski.
+                <p>W Tuchowie i okolicy powstały ośrodki konspiracyjne, do których jednak należała głównie szlachta, młodzież gimnazjalna i seminaryjna,
+                    czasem
+                    rzemieślnicy i drobni urzędnicy. W Burzynie do konspiracji należeli: Aleksander Różycki, który w powstaniu listopadowym za męstwo i
+                    odwagę
+                    uzyskał rangę majora i Krzyż Virtuti Militari, jego syn Roman, Włodzimierz Rozen, nauczyciel Strzałkowski, Somorski oraz służba dworska,
+                    w
+                    tym Józef Gągola, Tomasz Iwaniec, Antoni Wantuch. W lutym wrzenie rewolucyjne ogarnęło nie tylko okolice Tuchowa, ale cały region
+                    Tarnowski.
                     W dworach ruszyły intenstwne przygotowania do ruszenia przeciwko Austriakom. Ułożono plan napadu i wyruszenia na Tarnów, który miał być
-                    centralnym punktem powstania w Galicji Zachodniej i gdzie powstanie miało się rozpocząć początkowo w dniu 21/22 lutego 1846 r. Dowódcą sił
+                    centralnym punktem powstania w Galicji Zachodniej i gdzie powstanie miało się rozpocząć początkowo w dniu 21/22 lutego 1846 r. Dowódcą
+                    sił
                     powstańczych tworzonych od Ciężkowic ku Tarnowowi miał być wyżej wspomniany major Aleksander Różycki z Burzyna.</p>
 
                 <p>W dworach śpiewano pieśni patriotyczne, kuto i nabijano broń, ostrzono pałasze, kobiety przygotowywały ubrania i chorągiewki do pik dla
-                    powstańców. Jak się okazało, uprawiano zbyt jawną konspirację. O przygotowaniach wiedziała cała służba dworska, nie zawsze lojalna, a przez
+                    powstańców. Jak się okazało, uprawiano zbyt jawną konspirację. O przygotowaniach wiedziała cała służba dworska, nie zawsze lojalna, a
+                    przez
                     nią i chłopi. Dowiedział się też rząd austriacki. Dnia 3 lutego 1846 roku na 10 dni przed planowaną akcją powstania, starosta tarnowski
                     Breinl otrzymał donos od trzech ryglickich Żydów, że w miasteczku Ryglice dwaj kowale trudnią się sporządzaniem broni z polecenia
                     miejscowego mandatariusza Karola Semetkowskiego. Breinl zarządził zbadanie sprawy i wysłał do miasteczka komisarza Nahlika. 10 lutego
-                    wysłany komisarz aresztował Semetkowskiego wraz z trzema jeszcze mieszczanami. Do aresztowanych dołączył jeszcze Antoni Kopecki. Ten ostatni
-                    po aresztowaniu załamał się i Breinl wiedział już wszystko o spisku i o planie rozbrojenia Austriaków. Austriacy powzięli szybko przewrotną
+                    wysłany komisarz aresztował Semetkowskiego wraz z trzema jeszcze mieszczanami. Do aresztowanych dołączył jeszcze Antoni Kopecki. Ten
+                    ostatni
+                    po aresztowaniu załamał się i Breinl wiedział już wszystko o spisku i o planie rozbrojenia Austriaków. Austriacy powzięli szybko
+                    przewrotną
                     i perfidną decyzję, aby powstanie szlacheckie stłumić rękami chłopów. Specjalnie rozsyłani agenci rządu austriackiego i odpowiednio
                     nastawieni "urlopnicy" z wojska wpadali do wsi z krzykiem, że szlachta się zbroi by mordować chłopów. Wołali: "Nieszczęście, zguba was
                     czeka, wnet was wszystkich panowie wymordują!". W Joninach dwóch ludzi szło przez wieś z krzykiem, by chłopy z domów wychodzili bo w
-                    Kowalowej szlachta już tamtejszych chłopów zabija. Inni agenci ogłaszali, że "dobry cesarz" już dawno zniósł pańszczyznę, tylko panowie to
+                    Kowalowej szlachta już tamtejszych chłopów zabija. Inni agenci ogłaszali, że "dobry cesarz" już dawno zniósł pańszczyznę, tylko panowie
+                    to
                     ukrywają przez chłopami. Trwoga i zdezorientowanie ogarnęło ciemne chłopstwo. W tej niepewności i zamęcie delegaci 70 gmin udali się 18
-                    lutego do starosty tarnowskiego Breinla von Wallenstern z pytaniem co mają robić. Starosta przyjął ich z wielką uprzejmością, wysłuchał, a
-                    ich obawy uspokoił oświadczeniem, że mają się uzbroić a spiskowców wiązać i odstawiać do cyrkułu. Za okazaną "wierność" cesarzowi rozdał im
+                    lutego do starosty tarnowskiego Breinla von Wallenstern z pytaniem co mają robić. Starosta przyjął ich z wielką uprzejmością, wysłuchał,
+                    a
+                    ich obawy uspokoił oświadczeniem, że mają się uzbroić a spiskowców wiązać i odstawiać do cyrkułu. Za okazaną "wierność" cesarzowi rozdał
+                    im
                     w nagrodę 500 zł reńskich.</p>
 
-                <p>Całością powstania w tarnowskim dowodził major Leon Czechowski. Ponieważ policja austriacka rozpoczęła aresztowania spiskowców już 11 lutego
+                <p>Całością powstania w tarnowskim dowodził major Leon Czechowski. Ponieważ policja austriacka rozpoczęła aresztowania spiskowców już 11
+                    lutego
                     (w Ryglicach), major Czechowski przyspieszył wybuch powstania o 4 dni i wyznaczył go na 18/19 lutego, o czym nie zostały poinformowane
                     sąsiednie cyrkuły. Realizacja założonego planu powstania znacznie odbiegła od zamierzeń. Nocą z 18 na 19 lutego szalała śnieżyca, a mróz
                     sięgał 20 stopni. Na wyznaczone miejsce prawie nikt nie dotarł, gdyż o przełożeniu daty powstania nie wiedzieli. Punktem zbornym dla
                     oddziału Różyckiego była Karwodrza. Stąd udał się z zaledwie kilkunastoma ludźmi w kierunku Tarnowa, otoczonego już kordonem wojska
-                    austriackiego. Po utarczkach z wojskiem udało im się wśród śnieżycy wymknąć. Wysłali posłańca na zwiady, co się dzieje z sąsiednim oddziałem
+                    austriackiego. Po utarczkach z wojskiem udało im się wśród śnieżycy wymknąć. Wysłali posłańca na zwiady, co się dzieje z sąsiednim
+                    oddziałem
                     powstańców, Eisenbacha z Pleśnej. Kiedy posłaniec wrócił z wiadomością, że oddział ten został przez chłopstwo rozbity, postanowiono w
                     pojedynkę powrócić każdy do swojego domu. Major Różycki po powrocie do domu wezwał wójta Józefa Nalepkę, aby ogłosić poddanym zniesienie
                     pańszczyzny. Gromada (chłopi) jednak nie uwierzyła jego słowom.
                     Nazajutrz 19 lutego 1846 roku chłopi z Burzyna, razem ze wspólnikami z sąsiednich wsi: Bistuszowej, Kielanowic, Dąbrówki Tuchowskiej i
                     Lubaszowej, uzbrojeni w kije i siekiery, wtargnęli do burzyńskiego dworu i dotkliwie pobili jego mieszkańców. Potem ich związali i po
-                    splądrowaniu dworu około godz. 4 po południu rzucili ciężko rannych na sanie i powieźli do Tuchowa. Jak podaje S. Dembiński w Kronice dworów
+                    splądrowaniu dworu około godz. 4 po południu rzucili ciężko rannych na sanie i powieźli do Tuchowa. Jak podaje S. Dembiński w Kronice
+                    dworów
                     szlacheckich - Major Różycki przywiązany był do sań za ramiona tak, że głowa za saniami wisiała w powietrzu. Córkę Różyckiego, która
-                    obiecała wskazać, gdzie jest ukryta broń, wsadzili również na sanie wraz z ojcem i ruszyli do komornika do Tuchowa. Żadnemu ze związanych i
+                    obiecała wskazać, gdzie jest ukryta broń, wsadzili również na sanie wraz z ojcem i ruszyli do komornika do Tuchowa. Żadnemu ze
+                    związanych i
                     przeczuwających bliską śmierć nie pozwolili przywołać do siebie kapłana dla oczyszczenia sumienia wedle katolickiego obrządku. Tuchowscy
-                    mieszczanie trzymali stronę chłopów. Szydzili ponoć z pobitych i wołali aby ich dobić. Ponieważ komornika nie było w domu (był, tylko taką
+                    mieszczanie trzymali stronę chłopów. Szydzili ponoć z pobitych i wołali aby ich dobić. Ponieważ komornika nie było w domu (był, tylko
+                    taką
                     informację kazał przekazać rebeliantom), chłopi postanowili przewieźć ich do Tarnowa, aby uzyskać przyobiecaną przez starostę Breinla
                     zapłatę. Aby tego dokonać, trzeba było przebyć przeprawę przez Białą promem. Na promie stało już wielu ludzi i konie nie chciały wejść,
-                    wobec tego zrzucono z sań ciężko rannych wraz z córką Różyckiego. Córka błagała chłopów, by pozwolili rozwiązać ledwie żywego ojca, ale wójt
-                    burzyński, Józef Nalepka, niepomny na dobrodziejstwa świadczone mu przez Różyckiego, nie pozwolił go rozwiązać, lecz rozkazał "cisnąć nim na
+                    wobec tego zrzucono z sań ciężko rannych wraz z córką Różyckiego. Córka błagała chłopów, by pozwolili rozwiązać ledwie żywego ojca, ale
+                    wójt
+                    burzyński, Józef Nalepka, niepomny na dobrodziejstwa świadczone mu przez Różyckiego, nie pozwolił go rozwiązać, lecz rozkazał "cisnąć
+                    nim na
                     prom jak psem". Na to nadbiegła inna gromada chłopstwa i domagała się, aby Różyckiego dobić, gdyż za niego dostaną więcej nagrody niż za
-                    innych. Zaczęto znowu pastwić się nad półżywym Różyckim, druzgocąc mu ręce i nogi, i prawie martwego wioząc w kierunku Tarnowa. Żona majora
+                    innych. Zaczęto znowu pastwić się nad półżywym Różyckim, druzgocąc mu ręce i nogi, i prawie martwego wioząc w kierunku Tarnowa. Żona
+                    majora
                     Różyckiego, chociaż strasznie cepami pokaleczona w głowę, że czaszkę gołą było jej widać, przyczołgała się także do Tuchowa, aby ratować
-                    męża. Rozbestwione chłopstwo byłoby ją zamordowało, gdyby komornik - na prośbę kilku litością zdjętych mieszczan tuchowskich - nie zamknął
-                    jej do aresztu wraz z córką i w ten sposób ocalił od śmierci. Dziewięcioletniego synka p. Różyckich także chciano zamordować, ale ukryła go
-                    jego piastunka. W Łękawicy zatrzymali się przed karczmą by się napić. Tu pijane chłopstwo bestialsko dobiło rannych. Do Breinla dowieziono
+                    męża. Rozbestwione chłopstwo byłoby ją zamordowało, gdyby komornik - na prośbę kilku litością zdjętych mieszczan tuchowskich - nie
+                    zamknął
+                    jej do aresztu wraz z córką i w ten sposób ocalił od śmierci. Dziewięcioletniego synka p. Różyckich także chciano zamordować, ale ukryła
+                    go
+                    jego piastunka. W Łękawicy zatrzymali się przed karczmą by się napić. Tu pijane chłopstwo bestialsko dobiło rannych. Do Breinla
+                    dowieziono
                     już tylko trupy pomordowanych, dopominając się o przyobiecaną nagrodę. Chłopstwo z Burzyna zamordowało także leśniczego, Franciszka
                     Merskiego z Jodłowej Górnej.</p>
 
-                <p>Z pisma ks. kanonika Zabierzewskiego, proboszcza w Tuchowie napisanego dnia 20 lutego 1946 r. dowiadujemy się, że jeszcze przed napadem na
+                <p>Z pisma ks. kanonika Zabierzewskiego, proboszcza w Tuchowie napisanego dnia 20 lutego 1946 r. dowiadujemy się, że jeszcze przed napadem
+                    na
                     dwór w Burzynie usilnie prosił on ludzi z Dąbrówki Tuch. i Garbka, aby na wezwanie chłopów z Burzyna nie przyłączali się do nich, jednak
-                    jego nauki i prośby nie odniosły skutku. Jak mogły trafić do przekonania i sumień chłopskich perswazje księdza? O sprawach bożych chłopi w
+                    jego nauki i prośby nie odniosły skutku. Jak mogły trafić do przekonania i sumień chłopskich perswazje księdza? O sprawach bożych chłopi
+                    w
                     Burzynie mieli osobliwe pojęcie, bowiem przed rzezią chodzili do ks. Zabierzewskiego po rozgrzeszenie za morderstwa, które planowali
                     popełnić!</p>
 
@@ -412,8 +485,10 @@
                 <p>Zamordowani pochowani zostali w mogile ofiar rabacji 1846 r. na Starym Cmentarzu w Tarnowie.</p>
                 <h5>1847 r. </h5>
 
-                <p>W rok po rzezi galicyjskiej wybuchła w Burzynie i sąsiednich miejscowościach epidemia cholery, tyfusu i zapanował dotkliwy głód, tak wielki,
-                    że w Buchcicach i Ryglicach odnotowano przypadki kanibalizmu. W niektórych parafiach grzebano dziennie nawet po 40-50 osób zmarłych z głodu.
+                <p>W rok po rzezi galicyjskiej wybuchła w Burzynie i sąsiednich miejscowościach epidemia cholery, tyfusu i zapanował dotkliwy głód, tak
+                    wielki,
+                    że w Buchcicach i Ryglicach odnotowano przypadki kanibalizmu. W niektórych parafiach grzebano dziennie nawet po 40-50 osób zmarłych z
+                    głodu.
                     Przez wielu było to odczytywane jako kara boża za grzech rabacji.</p>
                 <pGłód rozpoczął się już w 1846 r. na skutek nieurodzaju ziemniaków, podstawowego składnika wyżywienia chłopskiego. Na wiosnę tylko niektórzy
                        chłopi obsiali swoje poletka, natomiast pola dworskie leżały odłogiem. Właściciele dworu zginęli, a chłopi po zrabowaniu dworu, zabrali
@@ -434,12 +509,14 @@
 
                 <p>Budowa nowego dworu. (czytaj więcej -> Dworek w Burzynie ).</p>
 
-                <p>W roku 1858 Burzyn należał do Julii z Różyckich Chrząstowskiej i Romana Chrząstowskiego. W rękach Chrząstowskich majątek pozostawał do końca
+                <p>W roku 1858 Burzyn należał do Julii z Różyckich Chrząstowskiej i Romana Chrząstowskiego. W rękach Chrząstowskich majątek pozostawał do
+                    końca
                     drugiej wojny światowej. Ostatnim właścicielem był Tadeusz Chrząstowski. </p>
                 <h5>1866 r.</h5>
 
                 <p>W XIX w. i aż do II wojny światowej w Tuchowie i okolicznych miejscowościach mieszkało wielu Żydów. W 1866 r. rabinat tarnowski wysłał do
-                    tuchowskiego komendarza kościoła NMP skargę przeciw Józefowi Gottliebowi, burzyńskiemu dzierżawcy monopolowemu, który wypędziwszy swą żonę,
+                    tuchowskiego komendarza kościoła NMP skargę przeciw Józefowi Gottliebowi, burzyńskiemu dzierżawcy monopolowemu, który wypędziwszy swą
+                    żonę,
                     żył z 3 nałożnicami chrześcijańskimi. </p>
                 <h5>Przełom XIX i XX wieku </h5>
 
@@ -450,7 +527,8 @@
 
                 <p>I wojna światowa</p>
 
-                <p>W Tuchowie i okolicznych miejscowościach w latach 1914-1915 toczyły się krwawe bitwy pomiędzy wojskami rosyjskimi i austriackimi. Jednak w
+                <p>W Tuchowie i okolicznych miejscowościach w latach 1914-1915 toczyły się krwawe bitwy pomiędzy wojskami rosyjskimi i austriackimi. Jednak
+                    w
                     samym Burzynie nie toczyły się żadne poważniejsze działania bojowe. 9 listopada 1914 spłonął most na rzece Białej w Burzynie.</p>
 
                 <p>5 kwietnia 1915 r. dla urozmaicenia spokojniejszego czasu na froncie Rosjanie urządzili bal w Burzynie. Przyjęcie odbywało się w lamusie
@@ -458,16 +536,20 @@
                     kanonada od Gromnika, która spowodowała popłoch nie tylko wśród rozbawionych, ale także i w sztabie - we dworze.</p>
                 <h5>Dwudziestolecie Międzywojenne</h5>
 
-                <p>W tym okresie Tuchów i okolice w dalszym ciągu opierały swoją egzystencję na rolnictwie, które stanowiło podstawową gałąź gospodarki regionu.
+                <p>W tym okresie Tuchów i okolice w dalszym ciągu opierały swoją egzystencję na rolnictwie, które stanowiło podstawową gałąź gospodarki
+                    regionu.
                     Panowało duże rozdrobnienie gospodarstw chłopskich. Dominowały wśród nich gospodarstwa małorolne 2 - 5 hektarowe oraz karłowate do 2
                     hektarów. Rozdrobnienie gospodarstw, wzrastająca liczba ludności powodująca przeludnienie wsi oraz brak możliwości znalezienia pracy w
                     innych zawodach, powodowały emigrację "za chlebem". Emigracja rozpoczęła się już na przełomie wieków XIX i XX, i trwała nadal. Z samego
                     Burzyna wyemigrowało - często na stałe - kilkadziesiąt osób. Głównymi kierunkami emigracji były Stany Zjednoczone, Kanada, Francja,
                     Niemcy.</p>
 
-                <p>Okres po odzyskaniu niepodległości to czas tworzenia się różnych ugrupowań politycznych. Obok nich powstawały też grupy młodzieżowe, zwane
-                    "młodzieżówką". Taka grupa powstała w 1935 r. w Tuchowie. Była to organizacja ideowo-wychowawcza, kształtująca swój światopogląd na pismach
-                    Romana Dmowskiego, politycznie umiarkowana. Jej pierwszym kierownikiem był Stanisław Burek z Burzyna (w czasie II wojny światowej zginął on
+                <p>Okres po odzyskaniu niepodległości to czas tworzenia się różnych ugrupowań politycznych. Obok nich powstawały też grupy młodzieżowe,
+                    zwane
+                    "młodzieżówką". Taka grupa powstała w 1935 r. w Tuchowie. Była to organizacja ideowo-wychowawcza, kształtująca swój światopogląd na
+                    pismach
+                    Romana Dmowskiego, politycznie umiarkowana. Jej pierwszym kierownikiem był Stanisław Burek z Burzyna (w czasie II wojny światowej zginął
+                    on
                     na gestapo w Tarnowie). W okresie okupacji grupa ta weszła w całości w skład Narodowej Organizacji Wojskowej, utworzonej w grudniu 1939
                     r.</p>
                 <h5>1930 -1937 </h5>
@@ -479,23 +561,30 @@
 
                 <p>W kampanii wrześniowej, w bitwie pod Pszczyną poległo dwóch mieszkańców wsi: szer. Jan Stawarz i kpt. Jan Trembecki. W bitwie o Anglię, w
                     ramach polskich formacji lotniczych RAF walczył i poległ nad kanałem La Manche ppłk pilot Roman Smok. Stanisław Burek ps. "Wyrwa",
-                    organizator i pierwszy komendant placówki NOW w Tuchowie, został w 1943 r. aresztowany przez gestapo i torturowany; obawiając się złamania,
+                    organizator i pierwszy komendant placówki NOW w Tuchowie, został w 1943 r. aresztowany przez gestapo i torturowany; obawiając się
+                    złamania,
                     sam się pozbawił życia, zażywając cyjankali, ale nie wydał kolegów. W katowniach gestapo zginął także Antoni Blecharz, członek AK, a
                     aresztowany Władysław Zbylut zginął w Oświęcimiu.</p>
 
                 <p>Piękną kartę swoich dziejów w czasie okupacji zapisał Elsów. W okresie wojny w zabudowaniach Elsowa mieszkało wielu wybitnych
-                    intelektualistów z Poznania (m.in. archeolog prof. Józef Kostrzewski, profesor botaniki Jan Dobrowolski, filolog klasyczny dr Jan Stahr),
-                    członków związku, oraz kilka rodzin nie związanych ze stowarzyszeniem. Tu częstym gościem był ks. Władysław Kornilowicz, duszpasterz Zakładu
-                    dla Niewidomych w Laskach k. Warszawy. Duszpasterstwo prowadził ks. Lech Ziemski, kapelan AK. W osadzie uruchomiono tajne nauczanie, które
-                    zorganizował prof. Dobrowolski. Nawiązał on kontakt z prof. Janem Sajdakiem - pochodzącym z Burzyna profesorem i rektorem Uniwersytetu Adama
+                    intelektualistów z Poznania (m.in. archeolog prof. Józef Kostrzewski, profesor botaniki Jan Dobrowolski, filolog klasyczny dr Jan
+                    Stahr),
+                    członków związku, oraz kilka rodzin nie związanych ze stowarzyszeniem. Tu częstym gościem był ks. Władysław Kornilowicz, duszpasterz
+                    Zakładu
+                    dla Niewidomych w Laskach k. Warszawy. Duszpasterstwo prowadził ks. Lech Ziemski, kapelan AK. W osadzie uruchomiono tajne nauczanie,
+                    które
+                    zorganizował prof. Dobrowolski. Nawiązał on kontakt z prof. Janem Sajdakiem - pochodzącym z Burzyna profesorem i rektorem Uniwersytetu
+                    Adama
                     Mickiewicza w Poznaniu - w czasie wojny organizatorem tajnego nauczania w powiecie tarnowskim. Do współpracy dołączył też o. Karol
                     Winiarski, a także inni tuchowscy redemptoryści. Tak stworzony zespół prowadził naukę, z której korzystały dzieci z Elsowa, Burzyna,
                     Kielanowic i Bistuszowej. Mimo konspiracji, wiadomości o tajnym nauczaniu w Burzynie dotarły do Niemców, którzy 16 marca 1944 r.
                     niespodziewanie zjawili się w Elsowie (wg innych źródeł było to w dniach 4-5 marca). 17 letni Bogusław Niesiołowski, członek AK, uczeń i
-                    łącznik tajnego nauczania, usiłował się ukryć, ale został schwytany, pobity i aresztowany, czego nie przeżyła jego matka, Maria Niesiołowska
-                    - zmarła na atak serca. Bogusław, oskarżony o przynależność do nielegalnej organizacji, został rozstrzelany. W czasie tej akcji, Niemcy
+                    łącznik tajnego nauczania, usiłował się ukryć, ale został schwytany, pobity i aresztowany, czego nie przeżyła jego matka, Maria
+                    Niesiołowska
+                    -- zmarła na atak serca. Bogusław, oskarżony o przynależność do nielegalnej organizacji, został rozstrzelany. W czasie tej akcji, Niemcy
                     zastrzelili także ukrywającą się pod nazwiskiem Anny Krawczyk, dziewczynę - Żydówkę, oraz aresztowali dwie nauczycielki p. Ewelinę
-                    Gierczyńską i p. Janinę Czarnecką, które po przesłuchaniach zwolniono. Aresztowano także łączniczkę Zofię Wantuch z Burzyna. W czasie tej
+                    Gierczyńską i p. Janinę Czarnecką, które po przesłuchaniach zwolniono. Aresztowano także łączniczkę Zofię Wantuch z Burzyna. W czasie
+                    tej
                     obławy wielu innym udało się uciec i uniknąć aresztowania, byli to m.in. Andrzej i Zbigniew Czarneccy, Seweryn Styliński (uciekł do lasu
                     skacząc z piętra swojego domu w leśniczówce), Irena Burciu - później znaleźli oni schronienie w odległych dworach za pośrednictwem p.
                     Chrząstowskiego, właściciela dworu w Burzynie.
@@ -504,21 +593,28 @@
 
                 <p>Wielu mieszkańców wsi działało w różnych organizacjach ruchu oporu na terenie Tuchowa, jego okolic i samego Burzyna. Wspomniany wyżej
                     Stanisław Burek ps. "Wyrwa" był członkiem Narodowej Organizacji Wojskowej, podobnie jak Jan Siwak ps. "Świerk" i Kazimierz Usarz ps.
-                    "Brzoza". Ze Związku Walki Zbrojnej wywodził się por. Edward Wójcik ps. "Witraż", oficer broni I Batalionu "Barbara" 16 Pułku Piechoty Armii
+                    "Brzoza". Ze Związku Walki Zbrojnej wywodził się por. Edward Wójcik ps. "Witraż", oficer broni I Batalionu "Barbara" 16 Pułku Piechoty
+                    Armii
                     Krajowej i dowódca patrolu dywersyjnego komendy obwodu. Brał on m.in. udział w akcji napadu na pociąg z transportem wojskowym (w którym
                     jechało także ok. 300 Niemców) miało to miejsce w Tuchowie dn. 22 czerwca 1944. Z relacji Kazimierza Usarza ps. "Brzoza" zamieszczonej w
-                    książce S. Derusa Tuchów. Miasto i gmina do 1945 r. dowiadujemy się, że "Podczas postoju batalionu "Barbara" na Ratówkach, w sierpniu 1944
-                    r. został on wysłany do Burzyna, by kupił u Aleksego Wantucha cielę. K. Usarz napotkał Niemców, którzy przeprowadzali obławę, bowiem w tym
-                    dniu partyzanci zabili w Burzynie żołnierza niemieckiego. Został aresztowany i przeprowadzony do Bistuszowej. Tu zamknięto go we dworskiej
+                    książce S. Derusa Tuchów. Miasto i gmina do 1945 r. dowiadujemy się, że "Podczas postoju batalionu "Barbara" na Ratówkach, w sierpniu
+                    1944
+                    r. został on wysłany do Burzyna, by kupił u Aleksego Wantucha cielę. K. Usarz napotkał Niemców, którzy przeprowadzali obławę, bowiem w
+                    tym
+                    dniu partyzanci zabili w Burzynie żołnierza niemieckiego. Został aresztowany i przeprowadzony do Bistuszowej. Tu zamknięto go we
+                    dworskiej
                     piwnicy pod strażą jako zakładnika. Ocalenie zawdzięcza pp. Bossowskim i Franciszkowi Sajdakowi z Tuchowa, którzy wstawili się zanim do
                     Niemców. Pilnujący go SS-man oświadczył, że ma szczęście, bo miał zostać rozstrzelany i już kopano dla niego dołek."</p>
 
-                <p>Burzyn miał prężnie działający ruch ludowy, który stworzył organizację zbrojną, początkowo pod nazwą Straż Chłopska ("Chłostra"), a później
+                <p>Burzyn miał prężnie działający ruch ludowy, który stworzył organizację zbrojną, początkowo pod nazwą Straż Chłopska ("Chłostra"), a
+                    później
                     Bataliony Chłopskie. Stąd wywodził się komendant obwodowy Alfred Orlof ps. "Zabawa" oraz jego zastępca Stanisław Kmak ps. "Pokrzywa".
-                    Członkami BCh byli: Jan Nalepka, kapral Trembecki, Franciszek Kuraś, Kazimierz Zbylut i Władysław Zbylut. Ugrupowania te weszły w 1943 r. w
+                    Członkami BCh byli: Jan Nalepka, kapral Trembecki, Franciszek Kuraś, Kazimierz Zbylut i Władysław Zbylut. Ugrupowania te weszły w 1943
+                    r. w
                     skład AK i wzięły udział w akcji "Burza". Po jej ogłoszeniu partyzanci kilkakrotnie stacjonowali w burzyńskich lasach w Paśmie Brzanki.
                     Przez Burzyn i Dąbrówkę wyrwali się z okrążenia na Ratówkach. W działalności konspiracyjnej przyświecało im hasło wyrażone w "Modlitwie
-                    partyzanckiej": Niech z krwi niewinnie przelanej braci naszych, pomordowanych w lochach gestapo i czeki, niech z łez naszych matek i sióstr,
+                    partyzanckiej": Niech z krwi niewinnie przelanej braci naszych, pomordowanych w lochach gestapo i czeki, niech z łez naszych matek i
+                    sióstr,
                     wyrzuconych z odwiecznych swych siedzib, niech z mogił żołnierzy naszych, poległych na polach całego świata - rozwija się wolna i
                     Niepodległa Polska.</p>
 
@@ -546,12 +642,16 @@
 
                 <p>Po II wojnie światowej przeprowadzono zmiany administracyjne. 6 listopada 1956 r. odbyły się pierwsze po likwidacji gmin wybory do
                     gromadzkich rad narodowych. Burzyn wraz z Lubaszową wszedł w skład gromady Dąbrówka Tuchowska. Rady te były tworzone pod planowane w
-                    przyszłości spółdzielnie produkcyjne. Taką spółdzielnię pod nazwą "Zorza" założono na części gruntów Burzyna, z czego mieszkańcy odnieśli
+                    przyszłości spółdzielnie produkcyjne. Taką spółdzielnię pod nazwą "Zorza" założono na części gruntów Burzyna, z czego mieszkańcy
+                    odnieśli
                     wymierną korzyść w postaci elektryfikacji wsi w 1956 roku na koszt państwa. Wzorem dobrego gospodarowania spółdzielnia nie była mimo, że
-                    sporo prac polowych wykonywali uczniowie ówczesnej Zasadniczej Szkoły Mechanizacji Rolnictwa w Tuchowie, a nawet - jak świadczy dokumentacja
-                    szkolna - zdarzyło się, iż uczniowie nie byli klasyfikowani na I okres (który wówczas przypadał na 15 listopada) z powodu przedłużającej się
+                    sporo prac polowych wykonywali uczniowie ówczesnej Zasadniczej Szkoły Mechanizacji Rolnictwa w Tuchowie, a nawet - jak świadczy
+                    dokumentacja
+                    szkolna - zdarzyło się, iż uczniowie nie byli klasyfikowani na I okres (który wówczas przypadał na 15 listopada) z powodu przedłużającej
+                    się
                     akcji kopania ziemniaków w tej spółdzielni. Los spółdzielni był krótki - pod koniec lat 50. została zlikwidowana. Elektryczność zmieniła
-                    sposób życia mieszkańców wsi. Do gospodarstw wprowadzono urządzenia elektryczne, dzięki którym życie stało się łatwiejsze. Wpłynęła także na
+                    sposób życia mieszkańców wsi. Do gospodarstw wprowadzono urządzenia elektryczne, dzięki którym życie stało się łatwiejsze. Wpłynęła
+                    także na
                     poziom kultury. Z czasem w domach zaczęły pojawiać się odbiorniki radiowe i telewizyjne.</p>
 
                 <p>Spośród innych organizacji i instytucji powstałych i działających w tym czasie we wsi należy wymienić także:</p>
@@ -564,7 +664,8 @@
 
                 <p>1954 r. - powstał Ludowy Klub Sportowy "Burzyn".</p>
 
-                <p>10 marca 1957 r. - Marian Rempała, Stanisław Wiejacki, Franciszek Wantuch, Józef Serafin i Czesław Wójcik powołali do życia Ochotniczą Straż
+                <p>10 marca 1957 r. - Marian Rempała, Stanisław Wiejacki, Franciszek Wantuch, Józef Serafin i Czesław Wójcik powołali do życia Ochotniczą
+                    Straż
                     Pożarną.</p>
                 <h5>Lata 60. XX w.</h5>
 
@@ -573,15 +674,20 @@
                 <p>Budowa i otwarcie sklepu GS.</p>
                 <h5>Lata 70. XX w.</h5>
 
-                <p>Trwa zapoczątkowany w ubiegłym dziesięcioleciu rozwój gospodarczy. W budownictwie dominują domy murowane, zniknęły ostatecznie "kurne chaty",
+                <p>Trwa zapoczątkowany w ubiegłym dziesięcioleciu rozwój gospodarczy. W budownictwie dominują domy murowane, zniknęły ostatecznie "kurne
+                    chaty",
                     niewiele pozostało domów krytych strzechą. Izby przekształcają się w pokoje. Ludzie ubierają się modnie, co jest szczególnie widoczne w
-                    niedziele i święta. Do szkoły, od początku lat 60 dzieci przestały chodzić boso, nawet do prac polowych rolnicy ubierają stare lub gumowe
-                    obuwie. W polu pracuje się zaprzęgiem konnym, ale pojawiają się pierwsze ciągniki. Odżywianie jest bogatsze, mleko, masło, ser, jaja i mięso
+                    niedziele i święta. Do szkoły, od początku lat 60 dzieci przestały chodzić boso, nawet do prac polowych rolnicy ubierają stare lub
+                    gumowe
+                    obuwie. W polu pracuje się zaprzęgiem konnym, ale pojawiają się pierwsze ciągniki. Odżywianie jest bogatsze, mleko, masło, ser, jaja i
+                    mięso
                     kur z własnego podwórka dominują na stole burzynianina; zimą i wiosną na potrzeby własne często zabija się prosiaka.</p>
                 <h5>Lata 80. i 90. XX w.</h5>
 
-                <p>Lata 80 to niewątpliwie okres spadku stopy życiowej społeczeństwa i braku na rynku nieraz nawet podstawowych artykułów pierwszej potrzeby.
-                    Zła sytuacja staje się odczuwalna także wśród mieszkańców wsi, na której w ostatnich latach wielu ludzi zmieniło sposób utrzymywania siebie
+                <p>Lata 80 to niewątpliwie okres spadku stopy życiowej społeczeństwa i braku na rynku nieraz nawet podstawowych artykułów pierwszej
+                    potrzeby.
+                    Zła sytuacja staje się odczuwalna także wśród mieszkańców wsi, na której w ostatnich latach wielu ludzi zmieniło sposób utrzymywania
+                    siebie
                     i swoich rodzin. Głównym źródłem dochodów nie jest już rolnictwo, ale praca w mieście, w różnych gałęziach przemysłu.</p>
 
                 <p>6.12.1980 - utworzenie Parafii p.w. Św. Józefa w Burzynie</p>
@@ -594,8 +700,10 @@
 
                 <p>1995 - liczba mieszkańców Burzyna wynosi 1221 osób</p>
 
-                <p>1996 - w Burzynie utworzono Koło Kierowców, które zrzeszało wówczas ponad 120 członków i sympatyków motoryzacji. Celem Koła jest podnoszenie
-                    bezpieczeństwa ruchu drogowego oraz całokształtu kultury zawodowej kierowców. W dniu 30.06.1996 został poświęcony w kościele św. Józefa w
+                <p>1996 - w Burzynie utworzono Koło Kierowców, które zrzeszało wówczas ponad 120 członków i sympatyków motoryzacji. Celem Koła jest
+                    podnoszenie
+                    bezpieczeństwa ruchu drogowego oraz całokształtu kultury zawodowej kierowców. W dniu 30.06.1996 został poświęcony w kościele św. Józefa
+                    w
                     Burzynie sztandar Koła Kierowców ufundowany przez członków i sympatyków Koła. Wręczenia Sztandaru dokonał burmistrz Tuchowa inż. Andrzej
                     Słowik przy udziale Przewodniczącej Rady Miejskiej mgr Marii Szumlańskiej. </p>
 
@@ -607,31 +715,40 @@
                     w pierwszej połowie lat 90. zostaje zlikwidowany sklep GSu w środku wsi. Na jego miejsce pojawiają się nowe, prywatne sklepy spożywczo -
                     przemysłowe w Alejach. </p>
                 <h5>Lata 2000-2010</h5>
+
                 <p>Budowa plebanii.</p>
+
                 <p>Budowa kanalizacji (w części wsi)</p>
+
                 <p>1 września 2004 - oddanie do użytku nowej Szkoły Podstawowej w Burzynie</p>
+
                 <p>2007 - budowa chodnika w Burzynie</p>
+
                 <p>22 lipca 2007 - obchody 50 rocznicy powstania OSP w Burzynie</p>
+
                 <p>2008 - budowa chodnika wraz z kanalizacją deszczową w ciągu drogi powiatowej w Burzynie na dł. 160 mb</p>
+
                 <p>2009 - rozpoczęcie budowy sali gimnastycznej przy Zespole Szkół w Burzynie</p>
                 <h5>Lata 2011-2012</h5>
+
                 <p>W wyborach dn. 13 marca 2011 r. sołtysem Burzyna został wybrany Pan Wacław Ropski</p>
+
                 <p>2011 - modernizacja Domu Kultury. (15 sierpnia 2011 r. - uroczyste otwarcie odnowionego budynku DK)</p>
-
-
-<br/>
-<br/>
-
-
-<button><a href="/Dworek/index.html#back">WRÓĆ DO MENU</a></button>
-
             </div>
 
-        </article>
-        <article class="revitalization" id="revitalization">
-            <div class="row">
-                <h1>REWITALIZACJA</h1>
 
+        </div>
+
+    </article>
+    <article class="revitalization" id="revitalization">
+        <div class="row title">
+            <div class=" col-sm-12 col-md-12">
+                <h1>REWITALIZACJA</h1>
+            </div>
+        </div>
+
+        <div class="row description">
+            <div class=" col-sm-12 col-md-12">
                 <p>W roku 2016 firma OFTALDENT Tadeusz Łabno Spółka Jawna podjęła się rewitalizacji dworu wraz z parkiem.</p>
 
                 <p>Ponieważ w 2004r. dwór i park został wpisany na listę zabytków przez Wojewódzkiego Konserwatora Zabytków wykonano
@@ -644,12 +761,17 @@
                 <p>
                     W dniu 20.02.2017 podpisano umowę o dofinansowanie Projektu w ramach Osi Priorytetowej 6.
                     Dziedzictwo regionalne Regionalnego Programu Operacyjnego Województwa Małopolskiego na lata 2014 – 2020.</p>
-            </div>
 
-        </article>
-        <article class="cooperation" id="cooperation">
-            <div class="row">
+            </div>
+        </div>
+
+
+    </article>
+    <article class="cooperation" id="cooperation">
+        <div class="row">
+            <div class=" col-sm-12 col-md-12">
                 <h1>Współpraca</h1>
+
 
                 <p>Obecnie prowadzone prace remontowo rewitalizacyjne dworu i otaczającego go parku wymagają współpracy specjalistów wielu branż.
                     Począwszy od branży budowlanej po specjalistów dendrologów. Dlatego też osoby zainteresowane współpracą prosimy
@@ -662,32 +784,33 @@
                     projekt rewitalizacyjny
                     parku w zakresie zakładania alejek parkowych i podjazdów oraz instalacji oświetleniowej.</p>
 
-                <p> Wszelkie dodatkowe informacje uzyskać można pod adresem dworburzyn@gmail.com</p>
-            </div>
-        </article>
-        <article class="contact" id="contact">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>KONTAKT</h1>
-                    <h4>Osoby posiadające informacje na
-                        temat historii Dworu lub pamiątek z nim związanych prosimy o kontakt w celu uzupełnienia posiadanych zbiorów.</h4>
-                    <h4>Zapraszamy również firmy zainteresowane współpracą przy renowacji dworu i parku.</h4>
-
-                    <p>OFTALDENT Tadeusz Łabno Spółka Jawna</p>
-
-                    <p>Ul. Narutowicza 25 </p>
-
-                    <p>33-100 Tarnów</p>
-
-                    <p>e-mail: dworburzyn@gmail.com</p>
-
-                    <p>tel. 796 984 466</p>
-                </div>
+                <p> Wszelkie dodatkowe informacje uzyskać można pod adresem<a class="mail" href="mailto:dworburzyn@gmail.com"> dworburzyn@gmail.com</a></p>
             </div>
 
-        </article>
+        </div>
+    </article>
+    <article class="contact" id="contact">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>KONTAKT</h1>
+                <h4>Osoby posiadające informacje na
+                    temat historii Dworu lub pamiątek z nim związanych prosimy o kontakt w celu uzupełnienia posiadanych zbiorów.</h4>
+                <h4>Zapraszamy również firmy zainteresowane współpracą przy renowacji dworu i parku.</h4>
 
-    </main>
+                <p>OFTALDENT Tadeusz Łabno Spółka Jawna</p>
+
+                <p>Ul. Narutowicza 25 </p>
+
+                <p>33-100 Tarnów</p>
+
+                <p>e-mail: <a href="mailto:dworburzyn@gmail.com"> dworburzyn@gmail.com</a>
+                </p>
+
+                <p><a href="tel:+48 796 984 466">tel. 796 984 466</a></p>
+            </div>
+        </div>
+
+    </article>
 
 </div>
 </body>
