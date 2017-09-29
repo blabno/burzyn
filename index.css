@@ -1,7 +1,6 @@
 body {
     position: relative;
     font-family: 'Roboto', sans-serif;
-
 }
 .head{
     width: 100%;
@@ -26,6 +25,7 @@ body {
 .navbar-nav {
     text-align: center;
 }
+
 .affix {
     position: fixed;
     top:0;
@@ -40,26 +40,19 @@ body {
 
 h1 {
     letter-spacing: 2px;
-    margin-top: 5%;
-    margin-bottom: 5%;
     text-shadow: 2px 2px 5px black;
+    text-align: center;
 }
 
 h3 {
-    font-size: 30px;
+
     padding-top: 220px;
 
 }
 
-h4 {
-    margin-bottom: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
 h5 {
     color: #834242;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 900;
 }
 
@@ -69,11 +62,6 @@ h6 {
     font-size: 20px;
 }
 
-p {
-    padding-left: 5%;
-    padding-right: 5%;
-    font-size: 20px;
-}
 
 .logo {
     height: 10%;
@@ -98,7 +86,7 @@ button {
 
 .collapse{
   margin-left: 0;
-    background: linear-gradient( #834242, gray, #834242);
+    background-color: #834242;
 }
 .container-fluid{
     padding-left: 15px;
@@ -107,7 +95,7 @@ button {
     width: 100%;
 }
 .content {
-    margin-top:263px;
+    margin-top:50px;
     z-index: -1;
 }
 
@@ -116,28 +104,19 @@ button {
     font-size: 15px;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: white;
+  color: #bc6c6c;
     background-color: #834242;
-   transform: scale(1.1);
-
 }
 
-.mail{
-    color: #333333;
-}
-.mail:visited{
-    text-decoration: none;
-}
-.main:hover{
-    text-decoration: none;
-}
-
-a {
-    color: white;
+.navbar-nav{
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float:none;
 }
 
 a:visited {
-    color: white;
+    color:grey;
     text-decoration: none;
 }
 
@@ -160,11 +139,15 @@ a:hover {
     font-weight: 100;
     text-shadow: 2px 2px 5px black;
 }
+article{
+    padding-top: 30px;
+}
 
 
 .location {
-    min-height: 250px;
+    min-height: 200px;
     text-align: center;
+    /*padding-top: 50px;*/
 }
 
 .galery {
@@ -188,48 +171,40 @@ a:hover {
 .history h6{
     text-align: center;
 }
-.column{
+.colum{
     column-count: 3;
-    padding: 5%;
-
+    column-gap: 2em;
+    /*padding: 5px 5ex 5em;*/
 }
-.title{
-    color: white;
+.bg-photo{
+
     background: url("images/dwor.jpg") no-repeat fixed center;
     background-size: cover;
-    box-shadow: inset 0 0 0 500px rgba(0, 0, 0, 0.4);
-    text-shadow: 2px 2px 5px black;
-
+    height: 350px;
+    margin-top: 40px;
 }
-.description{
-
- padding-top: 3%;
-    background: linear-gradient(white,white, #6d7e74)
-
-}
-
 
 .revitalization {
-    text-align: center;
+    text-align: justify;
 }
 
 .cooperation {
 
     height: auto;
-    text-align: center;
+    text-align: justify;
 }
 
 .contact {
-    background-color: #834242;
-    color: white;
-    text-align: center;
+
+    text-align: justify;
+
 }
 
 p:last-child {
     padding-bottom: 5%;
 }
 @media only screen and (max-width: 900px) {
- .column{
+ .colum{
      column-count: 1;
  }
     button{
@@ -259,16 +234,14 @@ margin-top: 90px;
         background-color: #834242;
         margin-left: 0;
     }
-    /*.affix ~ .container-fluid {*/
-        /*position: relative;*/
-        /*top: 50px;*/
-        /*right: 0;*/
-    /*}*/
+
     .navbar-default .navbar-nav>li>a {
         color: white;
-        font-size: 15px;
-    }
 
+    }
+.contact{
+    text-align: center;
+}
 
 }
 @media only screen and (max-width: 767px) {
@@ -276,22 +249,20 @@ margin-top: 90px;
         margin-left: -15px;
         margin-right: -15px;
     }
-    .navbar-header{
-        background: linear-gradient( #834242, gray, #834242);
+
+    .navbar-header {
+        background-color: #834242;
     }
-    .affix>.menu>nav>.navbar-header {
+
+    .affix > .menu > nav > .navbar-header {
         padding-right: 15px;
     }
 
-.navbar-toggle{
-    color: white;
-}
-    .navbar-default .navbar-toggle .icon-bar {
-        background-color: #834242;
+    article > .row > div {
+        margin-top: 50px;
     }
-}
+  p{
+      font-size: 17px;
+  }
 
-
-article > .row > div{
-    margin-top: 50px;
 }
