@@ -8,6 +8,13 @@ body {
     display: inline-block;
 }
 
+.flags {
+    position: absolute;
+    right: 0;
+    top: 9%;
+
+}
+
 .menu {
     margin-left: -15px;
 }
@@ -193,7 +200,6 @@ article {
 .colum {
     column-count: 3;
     column-gap: 2em;
-    /*padding: 5px 5ex 5em;*/
 }
 
 .bg-photo {
@@ -221,7 +227,22 @@ p:last-child {
     padding-bottom: 5%;
 }
 
+.poster {
+    display: block;
+    margin: 20px auto;
+}
+
+.poster:hover {
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 900px) {
+    .flags {
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
     .colum {
         column-count: 1;
     }
@@ -272,6 +293,10 @@ p:last-child {
 }
 
 @media only screen and (max-width: 767px) {
+    .flags {
+        top: 125px;
+    }
+
     .menu {
         margin-left: -15px;
         margin-right: -15px;
@@ -293,4 +318,10 @@ p:last-child {
         font-size: 17px;
     }
 
+}
+
+@media only screen and (max-width: 506px) {
+    .flags {
+        top: 190px;
+    }
 }
