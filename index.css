@@ -3,6 +3,64 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.margin-10 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end
+}
+
+.font-button {
+    background: transparent;
+    color: black;
+    font-weight: bold;
+
+}
+
+.a {
+    vertical-align: bottom;
+    padding: 1px 1px;
+}
+
+button.font-button {
+    padding: 3px 3px 0 3px;
+    outline-color: lightgrey;
+
+}
+
+.small {
+    font-size: 16px;
+
+}
+
+.medium {
+    font-size: 18px;
+
+}
+
+.large {
+    font-size: 20px;
+}
+
+.plus {
+    font-size: 12px;
+    vertical-align: top;
+}
+
+.contrast-button {
+    font-size: 16px;
+    background: black;
+    padding-bottom: 0;
+    padding-top: 0;
+    border-radius: 0px;
+    font-weight: bold;
+    outline-color: transparent;
+    color: yellow;
+}
+
+.contrast {
+    background-color: yellow;
+}
+
 .head {
     width: 100%;
     display: inline-block;
