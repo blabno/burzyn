@@ -9,7 +9,7 @@
 
     <title>Dwór Burzyn</title>
 </head>
-<body data-spy="scroll" data-target=".head" id="body-contrast">
+<body data-spy="scroll" data-target=".head" id="body" class="normal">
 <div class="container">
     <div class="margin-10">
         <button class="font-button small" id="small" title="Mała czcionka"><span class="a">A</span></button>
@@ -1301,38 +1301,34 @@
     var mediumButton = document.querySelector('.medium');
     var largeButton = document.querySelector('.large');
     var contrastButton = document.querySelector('.contrast-button');
-    var body;
-    var p;
+    var body=document.getElementById('body');
 
     function fontSmall() {
-        p = document.getElementsByTagName('p');
-        for (var i = 0; i < p.length; i++) {
-            if (p[i].className !== 'small' && (p[i].className === 'medium' || p[i].className === 'large')) {
-                p[i].className = 'small';
-            }
+        if(body.classList.length===2){
+            body.classList = 'contrast normal'
+        }else{
+            body.classList='normal';
         }
     }
 
     function fontMedium() {
-        p = document.getElementsByTagName('p');
-        for (var i = 0; i < p.length; i++) {
-            if (p[i].className !== 'medium' && (p[i].className === 'small' || p[i].className === 'large')) {
-                p[i].className = 'medium';
-            }
+        if(body.classList.length===2){
+            body.classList = 'contrast medium'
+        }else{
+            body.classList='medium';
         }
     }
 
     function fontLarge() {
-        p = document.getElementsByTagName('p');
-        for (var i = 0; i < p.length; i++) {
-            if (p[i].className !== 'large' && (p[i].className === 'small' || p[i].className === 'medium')) {
-                p[i].className = 'large';
-            }
+        if(body.classList.length===2){
+            body.classList = 'contrast large'
+        }else{
+            body.classList='large';
         }
     }
 
     function contrast() {
-        body = document.getElementById('body-contrast');
+        body = document.getElementById('body');
         body.classList.toggle("contrast");
     }
 

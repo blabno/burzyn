@@ -27,17 +27,23 @@ button.font-button {
 
 }
 
-.small {
+.small{
+    font-size: 16px;
+}
+.medium{
+    font-size: 18px;
+}
+ .normal p{
     font-size: 16px;
 
 }
 
-.medium {
+.medium p{
     font-size: 18px;
 
 }
 
-.large {
+.large p{
     font-size: 20px;
 }
 
