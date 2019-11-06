@@ -12,7 +12,7 @@
 <body data-spy="scroll" data-target=".head" id="body" class="normal">
 <div class="container">
     <div class="margin-10">
-        <button class="font-button small" id="normal" title="Mała czcionka"><span class="a">A</span></button>
+        <button class="font-button small" id="normal" title="Mała czcionka" ><span class="a">A</span></button>
         <button class="font-button medium" id="medium" title="Średnia czcionka"><span class="a">A</span><span
                 class="plus">+</span>
         </button>
@@ -1313,9 +1313,15 @@
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].addEventListener("click", function () {
                 if(body.classList.contains('contrast')){
-                    body.classList='contrast '+this.id
+                    body.classList.remove('medium');
+                    body.classList.remove('large');
+                    body.classList.remove('normal');
+                    body.classList.add(this.id);
                 }else{
-                    body.classList = this.id;
+                    body.classList.remove('medium');
+                    body.classList.remove('large');
+                    body.classList.remove('normal');
+                    body.classList.add(this.id);
                 }
             });
         }
