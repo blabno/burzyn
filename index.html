@@ -12,10 +12,12 @@
 <body data-spy="scroll" data-target=".head" id="body" class="normal">
 <div class="container">
     <div class="margin-10">
-        <button class="font-button small" id="small" title="Mała czcionka"><span class="a">A</span></button>
-        <button class="font-button medium" title="Średnia czcionka"><span class="a">A</span><span class="plus">+</span>
+        <button class="font-button small" id="normal" title="Mała czcionka"><span class="a">A</span></button>
+        <button class="font-button medium" id="medium" title="Średnia czcionka"><span class="a">A</span><span
+                class="plus">+</span>
         </button>
-        <button class="font-button large" title="Duża czcionka"><span class="a">A</span><span class="plus">++</span>
+        <button class="font-button large" id="large" title="Duża czcionka"><span class="a">A</span><span
+                class="plus">++</span>
         </button>
         <button class="contrast-button " title="Kontrast">A</button>
     </div>
@@ -1297,45 +1299,31 @@
 </div>
 <script>
 
-    var smallButton = document.getElementById('small');
-    var mediumButton = document.querySelector('.medium');
-    var largeButton = document.querySelector('.large');
     var contrastButton = document.querySelector('.contrast-button');
-    var body=document.getElementById('body');
-
-    function fontSmall() {
-        if(body.classList.length===2){
-            body.classList = 'contrast normal'
-        }else{
-            body.classList='normal';
-        }
-    }
-
-    function fontMedium() {
-        if(body.classList.length===2){
-            body.classList = 'contrast medium'
-        }else{
-            body.classList='medium';
-        }
-    }
-
-    function fontLarge() {
-        if(body.classList.length===2){
-            body.classList = 'contrast large'
-        }else{
-            body.classList='large';
-        }
-    }
+    var body = document.getElementById('body');
 
     function contrast() {
-        body = document.getElementById('body');
         body.classList.toggle("contrast");
     }
 
-    smallButton.addEventListener('click', fontSmall);
-    mediumButton.addEventListener('click', fontMedium);
-    largeButton.addEventListener('click', fontLarge);
     contrastButton.addEventListener('click', contrast);
+
+    function changeFont() {
+        var buttons = document.getElementsByClassName('font-button');
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", function () {
+                if(body.classList.contains('contrast')){
+                    body.classList='contrast '+this.id
+                }else{
+                    body.classList = this.id;
+                }
+            });
+        }
+    }
+
+    window.addEventListener("load", function () {
+        changeFont();
+    });
 
     function hideMenu() {
         menu.classList.remove('in');
