@@ -224,7 +224,7 @@ article {
     padding-top: 30px;
 }
 
-.location {
+.location.news {
     min-height: 200px;
     text-align: center;
 }
