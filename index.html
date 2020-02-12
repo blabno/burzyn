@@ -12,7 +12,7 @@
 <body data-spy="scroll" data-target=".head" id="body" class="normal">
 <div class="container">
     <div class="margin-10">
-        <button class="font-button small" id="normal" title="Mała czcionka"><span class="a">A</span></button>
+        <button class="font-button small" id="normal" title="Mała czcionka" ><span class="a">A</span></button>
         <button class="font-button medium" id="medium" title="Średnia czcionka"><span class="a">A</span><span
                 class="plus">+</span>
         </button>
@@ -40,11 +40,11 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav ">
+                        <li class="li"><a href="#news">Aktualności</a></li>
                         <li class="li"><a href="#location">Lokaliacja</a></li>
                         <li class="li"><a href="#galery">Galeria</a></li>
                         <li class="li"><a href="#history">Historia</a></li>
                         <li class="li"><a href="#revitalization">Rewitalizacja</a></li>
-                        <li class="li"><a href="#cooperation">Współpraca</a></li>
                         <li class="li"><a href="#contact">Kontakt</a></li>
                         <li class="li"><a href="#ue">Fundusze Europejskie</a></li>
                     </ul>
@@ -65,6 +65,24 @@
                 </h1>
             </div>
         </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-12 ">
+            <article class="news" id="news">
+                <h1 class="title">AKTUATNOŚCI</h1>
+                <p class="small"> Oftaldent Tadeusz Łabno Spółka Jawna oraz autor Jerzy Martynów
+                    zapraszają na otwarcie inauguracyjnej wystawy w nowo odnowionym budynku dworu w Burzynie
+                    prezentującej  prace malarskie  Jerzego Martynowa.
+                </p>
+                <div class="col-xs-12 col-sm-6 col-md-offset-3">
+                    <img class="galery-img thumbnail" src="images/news-1.jpg">
+                </div>
+            </article>
+        </div>
+        <div class="col-sm-12">
+            <p class="small text-center"><b>Sobota 15 luty 2020 roku o godzinie 12:00</b></p>
+        </div>
+
     </div>
     <div class="row">
         <div class="col-sm-12 col-md-12 ">
@@ -1302,9 +1320,15 @@
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].addEventListener("click", function () {
                 if(body.classList.contains('contrast')){
-                    body.classList='contrast '+this.id
+                    body.classList.remove('medium');
+                    body.classList.remove('large');
+                    body.classList.remove('normal');
+                    body.classList.add(this.id);
                 }else{
-                    body.classList = this.id;
+                    body.classList.remove('medium');
+                    body.classList.remove('large');
+                    body.classList.remove('normal');
+                    body.classList.add(this.id);
                 }
             });
         }
