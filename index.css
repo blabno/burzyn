@@ -240,7 +240,9 @@ article {
 }
 
 .fit {
-    object-fit: cover;
+    /*object-fit: fill;*/
+    /*position: relative;*/
+    /*top: -200px;*/
 }
 
 .history {
@@ -265,7 +267,8 @@ article {
 }
 
 .bg-photo {
-    background-size: cover;
+    /*background-size: cover;*/
+    /*vertical-align: middle;*/
     height: 300px;
     width: 100%;
     margin-top: 40px;
